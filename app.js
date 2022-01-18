@@ -9,11 +9,12 @@ app.get('/', function (req, res) {
     res.send('hello world')
 })
 
+//https://icon-library.com/images/image-icon-png/image-icon-png-6.jpg
 app.get('/host/hostid/miniapps/', function (req, res) {
     res.send([{
         id: "js-miniapp-sample",
-        displayName: "js-miniapp-sample",
-        icon: "https://icon-library.com/images/image-icon-png/image-icon-png-6.jpg",
+        displayName: "Mbbank",
+        icon: "https://play-lh.googleusercontent.com/W0wkLA35w-pE87TXxmPU9vUyzB7X9Mg8_P_btzQrLQSFouuk_xWsZBGA0BM1Dz90hw=s360-rw",
         version: {
             versionTag:"tag",
             versionId: "1.0"

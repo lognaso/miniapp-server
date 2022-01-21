@@ -55,6 +55,7 @@ app.get('/host/:hostid/miniapp/:miniappid/version/:versionid//manifest', functio
 
 app.get('/host/hostid/miniapp/:miniappid/version/:versionid/:testpath/metadata', function (req, res) {
     res.send({
+      "bundleManifest": {
         "reqPermissions": [
             {
                 "name": "rakuten.miniapp.user.USER_NAME",
@@ -111,13 +112,14 @@ app.get('/host/hostid/miniapp/:miniappid/version/:versionid/:testpath/metadata',
             "importantNotice": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "termsLink": "https://www.example.com",
             "privacyPolicyLink": "https://www.example.com"
-        }
+        }}
     })
 })
 
 
 app.get('/host/hostid/miniapp/:miniappid/version/:versionid//metadata', function (req, res) {
     res.send({
+      "bundleManifest": {
         "reqPermissions": [
             {
                 "name": "rakuten.miniapp.user.USER_NAME",
@@ -174,12 +176,13 @@ app.get('/host/hostid/miniapp/:miniappid/version/:versionid//metadata', function
             "importantNotice": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "termsLink": "https://www.example.com",
             "privacyPolicyLink": "https://www.example.com"
-        }
+        }}
     })
 })
 
 app.get('/host/hostid/miniapp/:miniappid/version/:versionid/metadata', function (req, res) {
     res.send({
+      "bundleManifest": {
         "reqPermissions": [
             {
                 "name": "rakuten.miniapp.user.USER_NAME",
@@ -236,7 +239,7 @@ app.get('/host/hostid/miniapp/:miniappid/version/:versionid/metadata', function 
             "importantNotice": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "termsLink": "https://www.example.com",
             "privacyPolicyLink": "https://www.example.com"
-        }
+        }}
     
     })
 })

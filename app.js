@@ -54,8 +54,7 @@ app.get('/host/:hostid/miniapp/:miniappid/version/:versionid//manifest', functio
 })
 
 app.get('/host/hostid/miniapp/:miniappid/version/:versionid/:testpath/metadata', function (req, res) {
-    res.send({
-      "bundleManifest": {
+    res.send({"bundleManifest": {
     "reqPermissions": [
         {
             "name": "mbbank.miniapp.user.USER_NAME",
@@ -94,22 +93,22 @@ app.get('/host/hostid/miniapp/:miniappid/version/:versionid/:testpath/metadata',
     ],
 
     "customMetaData": {
-        "provider": "MiniApp team",
-        "description": "Ứng dụng demo mini app.",
-        "fileSizeInMb": "2.3",
-        "importantNotice": "Ứng dụng được   để xây dựng các MiniApp",
-        "termsLink": "https://www.mbbank.com.vn",
-        "privacyPolicyLink": "https://www.mbbank.com.vn"
+      "provider": "MiniApp team",
+      "description": "Ứng dụng demo mini app.",
+      "fileSizeInMb": "2.3",
+      "importantNotice": "Ứng dụng được   để xây dựng các MiniApp",
+      "termsLink": "https://www.mbbank.com.vn",
+      "privacyPolicyLink": "https://www.mbbank.com.vn"
     }
+  }
 }
 
-    })
+)
 })
 
 
 app.get('/host/hostid/miniapp/:miniappid/version/:versionid//metadata', function (req, res) {
-    res.send({
-      "bundleManifest": {
+    res.send({"bundleManifest": {
     "reqPermissions": [
         {
             "name": "mbbank.miniapp.user.USER_NAME",
@@ -148,21 +147,21 @@ app.get('/host/hostid/miniapp/:miniappid/version/:versionid//metadata', function
     ],
 
     "customMetaData": {
-        "provider": "MiniApp team",
-        "description": "Ứng dụng demo mini app.",
-        "fileSizeInMb": "2.3",
-        "importantNotice": "Ứng dụng được   để xây dựng các MiniApp",
-        "termsLink": "https://www.mbbank.com.vn",
-        "privacyPolicyLink": "https://www.mbbank.com.vn"
+      "provider": "MiniApp team",
+      "description": "Ứng dụng demo mini app.",
+      "fileSizeInMb": "2.3",
+      "importantNotice": "Ứng dụng được   để xây dựng các MiniApp",
+      "termsLink": "https://www.mbbank.com.vn",
+      "privacyPolicyLink": "https://www.mbbank.com.vn"
     }
+  }
 }
 
-    })
+)
 })
 
 app.get('/host/hostid/miniapp/:miniappid/version/:versionid/metadata', function (req, res) {
-    res.send({
-      "bundleManifest": {
+    res.send({"bundleManifest": {
     "reqPermissions": [
         {
             "name": "mbbank.miniapp.user.USER_NAME",
@@ -201,17 +200,17 @@ app.get('/host/hostid/miniapp/:miniappid/version/:versionid/metadata', function 
     ],
 
     "customMetaData": {
-        "provider": "MiniApp team",
-        "description": "Ứng dụng demo mini app.",
-        "fileSizeInMb": "2.3",
-        "importantNotice": "Ứng dụng được   để xây dựng các MiniApp",
-        "termsLink": "https://www.mbbank.com.vn",
-        "privacyPolicyLink": "https://www.mbbank.com.vn"
+      "provider": "MiniApp team",
+      "description": "Ứng dụng demo mini app.",
+      "fileSizeInMb": "2.3",
+      "importantNotice": "Ứng dụng được   để xây dựng các MiniApp",
+      "termsLink": "https://www.mbbank.com.vn",
+      "privacyPolicyLink": "https://www.mbbank.com.vn"
     }
+  }
 }
 
-    
-    })
+)
 })
 app.post('/uploadfile', function (req, res) {
     res.send('hello world');

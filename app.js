@@ -59,11 +59,11 @@ app.get('/host/hostid/miniapp/:miniappid/version/:versionid/:testpath/metadata',
         "reqPermissions": [
             {
                 "name": "rakuten.miniapp.user.USER_NAME",
-                "reason": "Describe your reason here (optional)."
+                "reason": "Ứng dụng yêu cầu quyền truy cập user name"
             },
             {
                 "name": "rakuten.miniapp.user.PROFILE_PHOTO",
-                "reason": "Describe your reason here (optional)."
+                "reason": "Ứng dụng yêu cầu quyền truy cập profile photo"
             }
         ],
 
@@ -170,12 +170,12 @@ app.get('/host/hostid/miniapp/:miniappid/version/:versionid//metadata', function
         ],
 
         "customMetaData": {
-            "provider": "Rakuten Group Inc",
-            "description": "This is a sample mini app.",
+            "provider": "MiniApp team",
+            "description": "Ứng dụng demo mini app.",
             "fileSizeInMb": "2.3",
-            "importantNotice": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "termsLink": "https://www.example.com",
-            "privacyPolicyLink": "https://www.example.com"
+            "importantNotice": "Ứng dụng được   để xây dựng các MiniApp",
+            "termsLink": "https://www.mbbank.com.vn",
+            "privacyPolicyLink": "https://www.mbbank.com.vn"
         }}
     })
 })
@@ -186,11 +186,11 @@ app.get('/host/hostid/miniapp/:miniappid/version/:versionid/metadata', function 
         "reqPermissions": [
             {
                 "name": "rakuten.miniapp.user.USER_NAME",
-                "reason": "Describe your reason here (optional)."
+                "reason": "Ứng dụng yêu cầu quyền truy cập user name"
             },
             {
                 "name": "rakuten.miniapp.user.PROFILE_PHOTO",
-                "reason": "Describe your reason here (optional)."
+                "reason": "Ứng dụng yêu cầu quyền truy cập profile photo"
             }
         ],
 
@@ -233,12 +233,12 @@ app.get('/host/hostid/miniapp/:miniappid/version/:versionid/metadata', function 
         ],
 
         "customMetaData": {
-            "provider": "Rakuten Group Inc",
-            "description": "This is a sample mini app.",
+            "provider": "MiniApp team",
+            "description": "Ứng dụng demo mini app.",
             "fileSizeInMb": "2.3",
-            "importantNotice": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "termsLink": "https://www.example.com",
-            "privacyPolicyLink": "https://www.example.com"
+            "importantNotice": "Ứng dụng được   để xây dựng các MiniApp",
+            "termsLink": "https://www.mbbank.com.vn",
+            "privacyPolicyLink": "https://www.mbbank.com.vn"
         }}
     
     })

@@ -56,63 +56,53 @@ app.get('/host/:hostid/miniapp/:miniappid/version/:versionid//manifest', functio
 app.get('/host/hostid/miniapp/:miniappid/version/:versionid/:testpath/metadata', function (req, res) {
     res.send({
       "bundleManifest": {
-        "reqPermissions": [
-            {
-                "name": "rakuten.miniapp.user.USER_NAME",
-                "reason": "Ứng dụng yêu cầu quyền truy cập user name"
-            },
-            {
-                "name": "rakuten.miniapp.user.PROFILE_PHOTO",
-                "reason": "Ứng dụng yêu cầu quyền truy cập profile photo"
-            }
-        ],
+    "reqPermissions": [
+        {
+            "name": "mbbank.miniapp.user.USER_NAME",
+            "reason": "Ứng dụng yêu cầu quyền truy cập user name"
+        },
+        {
+            "name": "mbbank.miniapp.user.PROFILE_PHOTO",
+            "reason": "Ứng dụng yêu cầu quyền truy cập profile photo"
+        }
+    ],
 
-        "optPermissions": [
-            {
-                "name": "rakuten.miniapp.user.CONTACT_LIST",
-                "reason": "Describe your reason here (optional)."
-            },
-            {
-                "name": "rakuten.miniapp.device.LOCATION",
-                "reason": "Describe your reason here (optional)."
-            },
-            {
-                "name": "rakuten.miniapp.user.ACCESS_TOKEN",
-                "reason": "Describe your reason here (optional)."
-            },
-            {
-                "name": "rakuten.miniapp.user.action.SEND_MESSAGE",
-                "reason": "Describe your reason here (optional)."
-            },
-            {
-                "name": "rakuten.miniapp.user.POINTS",
-                "reason": "Describe your reason here (optional)."
-            },
-            {
-                "name": "rakuten.miniapp.device.FILE_DOWNLOAD",
-                "reason": "Describe your reason here (optional)."
-            }
-        ],
+    "optPermissions": [
+        {
+            "name": "mbbank.miniapp.user.CONTACT_LIST",
+            "reason": "Quyền truy cập danh sách liên lạc."
+        },
+        {
+            "name": "mbbank.miniapp.device.LOCATION",
+            "reason": "Quyền truy cập vị trí"
+        },
+        {
+            "name": "mbbank.miniapp.user.ACCESS_TOKEN",
+            "reason": "Quyền truy cập access token"
+        },
+    ],
 
-        "accessTokenPermissions": [
-            {
-                "audience": "rae",
-                "scopes": ["idinfo_read_openid", "memberinfo_read_point"]
-            },
-            {
-                "audience": "api-c",
-                "scopes": ["your_service_scope_here"]
-            }
-        ],
+    "accessTokenPermissions": [
+        {
+            "audience": "rae",
+            "scopes": ["idinfo_read_openid", "memberinfo_read_point"]
+        },
+        {
+            "audience": "api-c",
+            "scopes": ["your_service_scope_here"]
+        }
+    ],
 
-        "customMetaData": {
-            "provider": "MiniApp team",
-            "description": "Ứng dụng demo mini app.",
-            "fileSizeInMb": "2.3",
-            "importantNotice": "Ứng dụng được   để xây dựng các MiniApp",
-            "termsLink": "https://www.mbbank.com.vn",
-            "privacyPolicyLink": "https://www.mbbank.com.vn"
-        }}
+    "customMetaData": {
+        "provider": "MiniApp team",
+        "description": "Ứng dụng demo mini app.",
+        "fileSizeInMb": "2.3",
+        "importantNotice": "Ứng dụng được   để xây dựng các MiniApp",
+        "termsLink": "https://www.mbbank.com.vn",
+        "privacyPolicyLink": "https://www.mbbank.com.vn"
+    }
+}
+
     })
 })
 
@@ -120,126 +110,106 @@ app.get('/host/hostid/miniapp/:miniappid/version/:versionid/:testpath/metadata',
 app.get('/host/hostid/miniapp/:miniappid/version/:versionid//metadata', function (req, res) {
     res.send({
       "bundleManifest": {
-        "reqPermissions": [
-            {
-                "name": "rakuten.miniapp.user.USER_NAME",
-                "reason": "Ứng dụng yêu cầu quyền truy cập user name"
-            },
-            {
-                "name": "rakuten.miniapp.user.PROFILE_PHOTO",
-                "reason": "Ứng dụng yêu cầu quyền truy cập profile photo"
-            }
-        ],
+    "reqPermissions": [
+        {
+            "name": "mbbank.miniapp.user.USER_NAME",
+            "reason": "Ứng dụng yêu cầu quyền truy cập user name"
+        },
+        {
+            "name": "mbbank.miniapp.user.PROFILE_PHOTO",
+            "reason": "Ứng dụng yêu cầu quyền truy cập profile photo"
+        }
+    ],
 
-        "optPermissions": [
-            {
-                "name": "rakuten.miniapp.user.CONTACT_LIST",
-                "reason": "Describe your reason here (optional)."
-            },
-            {
-                "name": "rakuten.miniapp.device.LOCATION",
-                "reason": "Describe your reason here (optional)."
-            },
-            {
-                "name": "rakuten.miniapp.user.ACCESS_TOKEN",
-                "reason": "Describe your reason here (optional)."
-            },
-            {
-                "name": "rakuten.miniapp.user.action.SEND_MESSAGE",
-                "reason": "Describe your reason here (optional)."
-            },
-            {
-                "name": "rakuten.miniapp.user.POINTS",
-                "reason": "Describe your reason here (optional)."
-            },
-            {
-                "name": "rakuten.miniapp.device.FILE_DOWNLOAD",
-                "reason": "Describe your reason here (optional)."
-            }
-        ],
+    "optPermissions": [
+        {
+            "name": "mbbank.miniapp.user.CONTACT_LIST",
+            "reason": "Quyền truy cập danh sách liên lạc."
+        },
+        {
+            "name": "mbbank.miniapp.device.LOCATION",
+            "reason": "Quyền truy cập vị trí"
+        },
+        {
+            "name": "mbbank.miniapp.user.ACCESS_TOKEN",
+            "reason": "Quyền truy cập access token"
+        },
+    ],
 
-        "accessTokenPermissions": [
-            {
-                "audience": "rae",
-                "scopes": ["idinfo_read_openid", "memberinfo_read_point"]
-            },
-            {
-                "audience": "api-c",
-                "scopes": ["your_service_scope_here"]
-            }
-        ],
+    "accessTokenPermissions": [
+        {
+            "audience": "rae",
+            "scopes": ["idinfo_read_openid", "memberinfo_read_point"]
+        },
+        {
+            "audience": "api-c",
+            "scopes": ["your_service_scope_here"]
+        }
+    ],
 
-        "customMetaData": {
-            "provider": "MiniApp team",
-            "description": "Ứng dụng demo mini app.",
-            "fileSizeInMb": "2.3",
-            "importantNotice": "Ứng dụng được   để xây dựng các MiniApp",
-            "termsLink": "https://www.mbbank.com.vn",
-            "privacyPolicyLink": "https://www.mbbank.com.vn"
-        }}
+    "customMetaData": {
+        "provider": "MiniApp team",
+        "description": "Ứng dụng demo mini app.",
+        "fileSizeInMb": "2.3",
+        "importantNotice": "Ứng dụng được   để xây dựng các MiniApp",
+        "termsLink": "https://www.mbbank.com.vn",
+        "privacyPolicyLink": "https://www.mbbank.com.vn"
+    }
+}
+
     })
 })
 
 app.get('/host/hostid/miniapp/:miniappid/version/:versionid/metadata', function (req, res) {
     res.send({
       "bundleManifest": {
-        "reqPermissions": [
-            {
-                "name": "rakuten.miniapp.user.USER_NAME",
-                "reason": "Ứng dụng yêu cầu quyền truy cập user name"
-            },
-            {
-                "name": "rakuten.miniapp.user.PROFILE_PHOTO",
-                "reason": "Ứng dụng yêu cầu quyền truy cập profile photo"
-            }
-        ],
+    "reqPermissions": [
+        {
+            "name": "mbbank.miniapp.user.USER_NAME",
+            "reason": "Ứng dụng yêu cầu quyền truy cập user name"
+        },
+        {
+            "name": "mbbank.miniapp.user.PROFILE_PHOTO",
+            "reason": "Ứng dụng yêu cầu quyền truy cập profile photo"
+        }
+    ],
 
-        "optPermissions": [
-            {
-                "name": "rakuten.miniapp.user.CONTACT_LIST",
-                "reason": "Describe your reason here (optional)."
-            },
-            {
-                "name": "rakuten.miniapp.device.LOCATION",
-                "reason": "Describe your reason here (optional)."
-            },
-            {
-                "name": "rakuten.miniapp.user.ACCESS_TOKEN",
-                "reason": "Describe your reason here (optional)."
-            },
-            {
-                "name": "rakuten.miniapp.user.action.SEND_MESSAGE",
-                "reason": "Describe your reason here (optional)."
-            },
-            {
-                "name": "rakuten.miniapp.user.POINTS",
-                "reason": "Describe your reason here (optional)."
-            },
-            {
-                "name": "rakuten.miniapp.device.FILE_DOWNLOAD",
-                "reason": "Describe your reason here (optional)."
-            }
-        ],
+    "optPermissions": [
+        {
+            "name": "mbbank.miniapp.user.CONTACT_LIST",
+            "reason": "Quyền truy cập danh sách liên lạc."
+        },
+        {
+            "name": "mbbank.miniapp.device.LOCATION",
+            "reason": "Quyền truy cập vị trí"
+        },
+        {
+            "name": "mbbank.miniapp.user.ACCESS_TOKEN",
+            "reason": "Quyền truy cập access token"
+        },
+    ],
 
-        "accessTokenPermissions": [
-            {
-                "audience": "rae",
-                "scopes": ["idinfo_read_openid", "memberinfo_read_point"]
-            },
-            {
-                "audience": "api-c",
-                "scopes": ["your_service_scope_here"]
-            }
-        ],
+    "accessTokenPermissions": [
+        {
+            "audience": "rae",
+            "scopes": ["idinfo_read_openid", "memberinfo_read_point"]
+        },
+        {
+            "audience": "api-c",
+            "scopes": ["your_service_scope_here"]
+        }
+    ],
 
-        "customMetaData": {
-            "provider": "MiniApp team",
-            "description": "Ứng dụng demo mini app.",
-            "fileSizeInMb": "2.3",
-            "importantNotice": "Ứng dụng được   để xây dựng các MiniApp",
-            "termsLink": "https://www.mbbank.com.vn",
-            "privacyPolicyLink": "https://www.mbbank.com.vn"
-        }}
+    "customMetaData": {
+        "provider": "MiniApp team",
+        "description": "Ứng dụng demo mini app.",
+        "fileSizeInMb": "2.3",
+        "importantNotice": "Ứng dụng được   để xây dựng các MiniApp",
+        "termsLink": "https://www.mbbank.com.vn",
+        "privacyPolicyLink": "https://www.mbbank.com.vn"
+    }
+}
+
     
     })
 })

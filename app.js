@@ -11,7 +11,8 @@ app.get('/', function (req, res) {
 
 //https://icon-library.com/images/image-icon-png/image-icon-png-6.jpg
 app.get('/host/hostid/miniapps/', function (req, res) {
-    res.send([{
+    res.send([
+        {
         id: "js-miniapp-sample",
         displayName: "Mbbank",
         icon: "https://play-lh.googleusercontent.com/W0wkLA35w-pE87TXxmPU9vUyzB7X9Mg8_P_btzQrLQSFouuk_xWsZBGA0BM1Dz90hw=s360-rw",
@@ -21,33 +22,57 @@ app.get('/host/hostid/miniapps/', function (req, res) {
         },
         promotionalImageUrl: "https://icon-library.com/images/image-icon-png/image-icon-png-6.jpg",
         promotionalText: "test miniapp"
-    }])
+    },
+    {
+        id: "game",
+        displayName: "Game webgl 5",
+        icon: "https://play-lh.googleusercontent.com/Esmsrwb9pkM4hyvec06a_b4B-4kRNggv7tyVgnGkqrdTZYtX6Kqs0L3hTlIqZyfhknc=s360-rw",
+        version: {
+            versionTag: "tag",
+            versionId: "1.0"
+        },
+        promotionalImageUrl: "https://icon-library.com/images/image-icon-png/image-icon-png-6.jpg",
+        promotionalText: "test miniapp"
+    }
+])
 })
 
 
 //https://438a-2402-9d80-248-80dc-b04e-5362-b70b-70a7.ngrok.io/host/hostid/miniapp/test-app/version/1.0/manifest?lang=vi
 
 app.get('/host/:hostid/miniapp/:miniappid/version/:versionid/:testpath/manifest', function (req, res) {
+    var link = "https://www.dropbox.com/s/raw/yausuumgbdvj33f/game.zip?dl=0";
+    if(req.query.miniappid === "js-miniapp-sample")  {
+        link = "https://raw.githubusercontent.com/lognaso/miniapp-server/main/publlic/js-miniapp-sample.zip";
+    }
     res.send({
         "manifest": [
-            "https://raw.githubusercontent.com/lognaso/miniapp-server/main/publlic/js-miniapp-sample.zip"
+            link
         ]
 
     })
 })
 
 app.get('/host/:hostid/miniapp/:miniappid/version/:versionid/:testpath/manifest', function (req, res) {
+    var link = "https://www.dropbox.com/s/raw/yausuumgbdvj33f/game.zip?dl=0";
+    if(req.query.miniappid === "js-miniapp-sample")  {
+        link = "https://raw.githubusercontent.com/lognaso/miniapp-server/main/publlic/js-miniapp-sample.zip";
+    }
     res.send({
         "manifest": [
-            "https://raw.githubusercontent.com/lognaso/miniapp-server/main/publlic/js-miniapp-sample.zip"
+            link
         ]
 
     })
 })
 app.get('/host/:hostid/miniapp/:miniappid/version/:versionid//manifest', function (req, res) {
+    var link = "https://www.dropbox.com/s/raw/yausuumgbdvj33f/game.zip?dl=0";
+    if(req.query.miniappid === "js-miniapp-sample")  {
+        link = "https://raw.githubusercontent.com/lognaso/miniapp-server/main/publlic/js-miniapp-sample.zip";
+    }
     res.send({
         "manifest": [
-            "https://raw.githubusercontent.com/lognaso/miniapp-server/main/publlic/js-miniapp-sample.zip"
+            link
         ]
 
     })

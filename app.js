@@ -41,7 +41,7 @@ app.get('/host/hostid/miniapps/', function (req, res) {
 //https://438a-2402-9d80-248-80dc-b04e-5362-b70b-70a7.ngrok.io/host/hostid/miniapp/test-app/version/1.0/manifest?lang=vi
 
 app.get('/host/:hostid/miniapp/:miniappid/version/:versionid/:testpath/manifest', function (req, res) {
-    var link = "https://raw.githubusercontent.com/lognaso/miniapp-server/main/publlic/game-gl5.zip";
+    var link = "https://git.toprate.io/longlv/aaa/-/raw/main/mini-app/game-gl5.zip";
     if(req.params.miniappid === "js-miniapp-sample")  {
         link = "https://raw.githubusercontent.com/lognaso/miniapp-server/main/publlic/js-miniapp-sample.zip";
     }
@@ -54,7 +54,7 @@ app.get('/host/:hostid/miniapp/:miniappid/version/:versionid/:testpath/manifest'
 })
 
 app.get('/host/:hostid/miniapp/:miniappid/version/:versionid/:testpath/manifest', function (req, res) {
-    var link = "https://raw.githubusercontent.com/lognaso/miniapp-server/main/publlic/game-gl5.zip";
+    var link = "https://git.toprate.io/longlv/aaa/-/raw/main/mini-app/game-gl5.zip";
     if(req.params.miniappid === "js-miniapp-sample")  {
         link = "https://raw.githubusercontent.com/lognaso/miniapp-server/main/publlic/js-miniapp-sample.zip";
     }
@@ -66,7 +66,7 @@ app.get('/host/:hostid/miniapp/:miniappid/version/:versionid/:testpath/manifest'
     })
 })
 app.get('/host/:hostid/miniapp/:miniappid/version/:versionid//manifest', function (req, res) {
-    var link = "https://raw.githubusercontent.com/lognaso/miniapp-server/main/publlic/game-gl5.zip";
+    var link = "https://git.toprate.io/longlv/aaa/-/raw/main/mini-app/game-gl5.zip";
     if(req.params.miniappid === "js-miniapp-sample")  {
         link = "https://raw.githubusercontent.com/lognaso/miniapp-server/main/publlic/js-miniapp-sample.zip";
     }

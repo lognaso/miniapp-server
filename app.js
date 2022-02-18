@@ -24,7 +24,7 @@ app.get('/host/hostid/miniapps/', function (req, res) {
         promotionalText: "test miniapp"
     },
     {
-        id: "game",
+        id: "game-gl5",
         displayName: "Game webgl 5",
         icon: "https://play-lh.googleusercontent.com/Esmsrwb9pkM4hyvec06a_b4B-4kRNggv7tyVgnGkqrdTZYtX6Kqs0L3hTlIqZyfhknc=s360-rw",
         version: {

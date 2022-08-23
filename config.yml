@@ -1,6 +1,6 @@
 files:
-  input: coinbase_eth_symbols.csv
-  exclude: blacklist.csv
+  input: longlv.csv
+  exclude: longlv.csv
 tradingview:
   # The chart which has the indicator you'd like to use
   chartUrl: https://www.tradingview.com/chart/XXXXXXXX/

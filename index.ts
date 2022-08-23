@@ -1,10 +1,5 @@
 #!/usr/bin/env node
-import {readFile, writeFile, mkdir, access, chmod, rm} from 'fs/promises';
-import path from "path"
-import prompts from "prompts";
-import kleur from "kleur";
-import {execSync} from "child_process"
-import os from "os"
+longlv o day
 
 // @ts-ignore
 const manifest = JSON.parse(await readFile(new URL('./manifest.json', import.meta.url)));
